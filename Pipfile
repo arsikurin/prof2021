@@ -12,6 +12,7 @@ matplotlib = "*"
 mediapipe = "==0.8.8"
 
 [dev-packages]
+pylint = "*"
 
 [requires]
 python_version = "3.9"
