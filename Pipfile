@@ -10,6 +10,7 @@ opencv-python = "==4.5.3.56"
 colourlib = "*"
 matplotlib = "*"
 mediapipe = "==0.8.8"
+wmi = "*"
 
 [dev-packages]
 pylint = "*"
