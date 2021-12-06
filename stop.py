@@ -41,12 +41,14 @@ with mp.solutions.hands.Hands(
         results: Results = handsDetector.process(flippedRGB)
         if results.multi_hand_landmarks is not None:
             for i, hand in enumerate(results.multi_hand_landmarks):
+                thumb_vec = gen_vectors(flippedRGB, 2, 4, i)
                 index_vec = gen_vectors(flippedRGB, 5, 8, i)
                 middle_vec = gen_vectors(flippedRGB, 9, 12, i)
                 ring_vec = gen_vectors(flippedRGB, 13, 16, i)
                 pinky_vec = gen_vectors(flippedRGB, 17, 20, i)
 
                 flags = (
+                    1.745 > thumb_vec.angle > 1.308,
                     1.745 > index_vec.angle > 1.308,
                     1.745 > middle_vec.angle > 1.308,
                     1.745 > ring_vec.angle > 1.308,
