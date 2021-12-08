@@ -27,7 +27,13 @@ $ python -m pip install -r requirements.txt
 ### Запуск
 
 ```shell
-$ python main.py
+# без sudo яркость не может быть изменена
+$ sudo python main.py
+```
+#### Туториал
+
+```shell
+$ python main.py --help
 ```
 
 ---
