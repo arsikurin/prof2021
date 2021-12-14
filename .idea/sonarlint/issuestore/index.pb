@@ -11,3 +11,9 @@ H
 Pipfile.lock,e/5/e563262209b7c2e62d1869582c8134583baa2204
 7
 PLAN.md,a/b/ab32b47ca59bfb6aa7f9a754f3ab9757c70b7dc3
+7
+Pipfile,1/5/15af4b3d30054104e85f65a444b1db188c5deefb
+@
+requirements.txt,1/9/19359a61ae2446b51b549167b014da2fcf265768
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

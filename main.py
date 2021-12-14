@@ -1,6 +1,5 @@
 import collections
 import math
-import sys
 
 import cv2
 import mediapipe as mp
@@ -99,7 +98,8 @@ def help_():
                         fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1, color=(255, 255, 255), thickness=1
                     )
                     cv2.putText(
-                        flippedRGB, text=f"around axis of the ordinate ({flags[1]} / 6)", org=(10, flippedRGB.shape[0] - 10),
+                        flippedRGB, text=f"around axis of the ordinate ({flags[1]} / 6)",
+                        org=(10, flippedRGB.shape[0] - 10),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1, color=(255, 255, 255), thickness=1
                     )
                     if 2 * r / ws > 1.6:
@@ -113,18 +113,19 @@ def help_():
                             flags[1] += 1
                             flags[2] = 0
 
-                        print(round((pinky_tip.x - thumb_tip.x + .2) * 200), "%")
                         cv2.putText(
                             flippedRGB, text="status: [ROTATING]", org=(10, 50), fontFace=cv2.FONT_HERSHEY_PLAIN,
                             fontScale=3, color=(255, 255, 255), thickness=2
                         )
                 else:
+                    with open("service.arsikurin", "w") as f:
+                        f.write("1")
                     cv2.putText(
                         flippedRGB, text=f"Congrats! You've completed tutorial.", org=(10, flippedRGB.shape[0] - 40),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1, color=(255, 255, 255), thickness=1
                     )
                     cv2.putText(
-                        flippedRGB, text=f"Run the script without `--help` flag", org=(10, flippedRGB.shape[0] - 10),
+                        flippedRGB, text=f"You should rerun the script", org=(10, flippedRGB.shape[0] - 10),
                         fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1, color=(255, 255, 255), thickness=1
                     )
 
@@ -147,10 +148,7 @@ def main():
             flipped = np.fliplr(frame)
             flippedRGB = cv2.cvtColor(flipped, code=cv2.COLOR_BGR2RGB)
             results: Results = handsDetector.process(flippedRGB)
-            cv2.putText(
-                flippedRGB, text="Specify --help flag to launch tutorial", org=(10, flippedRGB.shape[0] - 10),
-                fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1, color=(255, 255, 255), thickness=1
-            )
+
             if results.multi_hand_landmarks is not None:
                 cv2.circle(
                     flippedRGB,
@@ -188,7 +186,6 @@ def main():
                         pinky_tip = results.multi_hand_landmarks[0].landmark[20]
                         thumb_tip = results.multi_hand_landmarks[0].landmark[4]
                         sbc.set_brightness((pinky_tip.x - thumb_tip.x + .2) * 200)
-                        print(round((pinky_tip.x - thumb_tip.x + .2) * 200), "%")
                         cv2.putText(
                             flippedRGB, text="status: [ROTATING]", org=(10, 50), fontFace=cv2.FONT_HERSHEY_PLAIN,
                             fontScale=3, color=(255, 255, 255), thickness=2
@@ -208,7 +205,11 @@ def main():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "--help":
+    try:
+        with open("service.arsikurin", "r") as f:
+            if f.read() == "1":
+                main()
+            else:
+                help_()
+    except FileNotFoundError:
         help_()
-    else:
-        main()
