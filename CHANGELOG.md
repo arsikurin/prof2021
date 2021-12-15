@@ -10,7 +10,6 @@
 
 
 ![wdwdwede](https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized.gif)
-
 _Вращение ладони_
 
 <p>
