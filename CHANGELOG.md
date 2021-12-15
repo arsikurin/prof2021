@@ -13,13 +13,12 @@
 _Вращение ладони_
 
 
+<img width="300" alt="Clenched palm" src="https://user-images.githubusercontent.com/58228813/146271663-c85f3d5c-28c0-4cb8-89b6-72327001da06.png">
+<em>Ладонь сжата в кулак</em>
 
-![wdwdwede](https://user-images.githubusercontent.com/58228813/146271663-c85f3d5c-28c0-4cb8-89b6-72327001da06.png)
-_Ладонь сжата в кулак_
 
-
-<img width="300" alt="Screenshot 2021-12-16 at 00 27 49" src="https://user-images.githubusercontent.com/58228813/146271670-75f43476-f886-4c0c-8d17-0eb7b72763fa.png">
-_Ладонь разжата_
+<img width="300" alt="Unclenched palm" src="https://user-images.githubusercontent.com/58228813/146271670-75f43476-f886-4c0c-8d17-0eb7b72763fa.png">
+<em>Ладонь разжата</em>
 
 - 08.12.2021 - сделан туториал
 - 15.12.2021 - туториал включается при первом запуске
