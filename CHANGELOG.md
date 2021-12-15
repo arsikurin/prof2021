@@ -12,7 +12,7 @@
 
 <iframe src="https://giphy.com/embed/KEHV315CwJfYVtM6as" width="480" height="369" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/palm-rot-KEHV315CwJfYVtM6as">via GIPHY</a></p>
 
-![Alt Text](https://giphy.com/embed/KEHV315CwJfYVtM6as)
+![Alt Text](https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized-large.gif)
 
 
 > Распознавание должно поисходить во время видео
