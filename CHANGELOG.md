@@ -13,7 +13,8 @@
 _Вращение ладони_
 
 
-<img width="492" alt="Screenshot 2021-12-16 at 00 27 29" src="https://user-images.githubusercontent.com/58228813/146271663-c85f3d5c-28c0-4cb8-89b6-72327001da06.png">
+
+![wdwdwede](https://user-images.githubusercontent.com/58228813/146271663-c85f3d5c-28c0-4cb8-89b6-72327001da06.png)
 _Ладонь сжата в кулак_
 
 
