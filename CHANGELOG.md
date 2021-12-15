@@ -10,10 +10,9 @@
 - 08.12.2021 - сделан туториал
 - 15.12.2021 - туториал включается при первом запуске
 
-<iframe src="https://giphy.com/embed/KEHV315CwJfYVtM6as" width="480" height="369" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/palm-rot-KEHV315CwJfYVtM6as">via GIPHY</a></p>
 
-![Alt Text](https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized-large.gif)
-<img src="https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized-large.gif" />
+![wdwdwede](https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized-large.gif)
+
 
 
 > Распознавание должно поисходить во время видео
