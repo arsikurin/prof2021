@@ -11,7 +11,7 @@
 - 15.12.2021 - туториал включается при первом запуске
 
 
-![wdwdwede](https://media.giphy.com/media/KEHV315CwJfYVtM6as/giphy-downsized-large.gif)
+![wdwdwede](https://media.giphy.com/media/d5dIQYNaBVd9gU9qvi/giphy-downsized.gif)
 
 
 
