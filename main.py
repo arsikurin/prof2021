@@ -28,7 +28,7 @@ def palm_size(landmark, shape):
 
 def help_():
     with mp.solutions.hands.Hands(
-            static_image_mode=True,
+            static_image_mode=False,
             max_num_hands=1,
             min_detection_confidence=.2
     ) as handsDetector:
